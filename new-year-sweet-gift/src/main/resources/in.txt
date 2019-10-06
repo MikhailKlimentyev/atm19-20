@@ -1,0 +1,9 @@
+Red Hat;Choco;15;8.55;Waffer, Choco;
+Crazy Bee;Jelly;10;7.68;
+Alenka;Choco;20;10.20;Waffer, Milk Choco;
+Pepper Mint;Caramel;8;4.80;
+Tomboy;Toffey;12;7.68;
+Belochka;Nuts;16;12.45;Nuts, Caramel;
+Truffel Capuccino;Choco;15;16.80;Nougat, Milk Choco, Nuts;
+Metropolitan Elit;Choco;18;13.20;Alcohol, Dark Choco;
+Fortune;Caramel;12;3.25;
