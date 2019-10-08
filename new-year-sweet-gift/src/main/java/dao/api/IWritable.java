@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface IWritable {
 
-    void write(List<Candy> candies);
+    void write(List<? extends Candy> candies);
 }
