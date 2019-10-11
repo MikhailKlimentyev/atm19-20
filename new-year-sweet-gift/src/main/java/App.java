@@ -1,6 +1,7 @@
 import dao.api.IReadable;
 import dao.api.IWritable;
 import dao.impl.ReaderFromFile;
+import dao.impl.ReaderFromJSON;
 import dao.impl.WriterToFile;
 import model.Candy;
 import model.Constants;
@@ -37,5 +38,8 @@ public class App {
 
         IReadable reader = new ReaderFromFile();
         System.out.println(reader.read());
+
+        ReaderFromJSON readerFromJSON = new ReaderFromJSON();
+        System.out.println(readerFromJSON.read());
     }
 }

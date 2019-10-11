@@ -5,9 +5,13 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 import java.util.List;
 
+
 public class CandyWithFilling extends Candy {
 
     private List<String> filling;
+
+    public CandyWithFilling() {
+    }
 
     public CandyWithFilling(String name, String mainIngredient, int weight, double price, List<String> filling) {
         super(name, mainIngredient, weight, price);

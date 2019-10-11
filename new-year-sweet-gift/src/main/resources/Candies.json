@@ -1,0 +1,93 @@
+[
+  {
+    "@class": "model.CandyWithFilling",
+    "name": "Red Hat",
+    "mainIngredient": "Choco",
+    "weight": 15,
+    "price": 8.55,
+    "filling": [
+      "Waffer",
+      "Choco"
+    ]
+  },
+  {
+    "@class": "model.Candy",
+    "name": "Crazy Bee",
+    "mainIngredient": "Jelly",
+    "weight": 10,
+    "price": 7.68
+  },
+  {
+    "@class": "model.Candy",
+    "name": "Crazy Bee",
+    "mainIngredient": "Jelly",
+    "weight": 10,
+    "price": 7.68
+  },
+  {
+    "@class": "model.CandyWithFilling",
+    "name": "Alenka",
+    "mainIngredient": "Choco",
+    "weight": 20,
+    "price": 10.20,
+    "filling": [
+      "Waffer",
+      "Choco"
+    ]
+  },
+  {
+    "@class": "model.Candy",
+    "name": "Pepper Mint",
+    "mainIngredient": "Caramel",
+    "weight": 8,
+    "price": 4.80
+  },
+  {
+    "@class": "model.Candy",
+    "name": "Tomboy",
+    "mainIngredient": "Toffey",
+    "weight": 12,
+    "price": 7.68
+  },
+  {
+    "@class": "model.CandyWithFilling",
+    "name": "Belochka",
+    "mainIngredient": "Nuts",
+    "weight": 16,
+    "price": 12.45,
+    "filling": [
+      "Nuts",
+      "Caramel"
+    ]
+  },
+  {
+    "@class": "model.CandyWithFilling",
+    "name": "Truffel Capuccino",
+    "mainIngredient": "Choco",
+    "weight": 15,
+    "price": 16.80,
+    "filling": [
+      "Nougat",
+      "Milk Choco",
+      "Nuts"
+    ]
+  },
+  {
+    "@class": "model.CandyWithFilling",
+    "name": "Choco",
+    "mainIngredient": "Choco",
+    "weight": 18,
+    "price": 13.20,
+    "filling": [
+      "Alcohol",
+      "Dark Choco"
+    ]
+  },
+  {
+    "@class": "model.Candy",
+    "name": "Fortune",
+    "mainIngredient": "Caramel",
+    "weight": 12,
+    "price": 3.25
+  }
+]

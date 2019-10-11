@@ -49,11 +49,13 @@ public final class Constants {
     public static final int CANDY_WITH_FILLING_FIELDS_NUMBER = 5;
 
     public static final String INPUT_FILE_NAME = "in.txt";
+    public static final String INPUT_JSON = "Candies.json";
     public static final String OUTPUT_FILE_NAME = "out.txt";
 
     public static final String PATH_TO_FILE = String.format("new-year-sweet-gift%ssrc%smain%sresources%s",
             File.separator, File.separator, File.separator, File.separator);
     public static final String PATH_TO_INPUT_FILE = PATH_TO_FILE + Constants.INPUT_FILE_NAME;
+    public static final String PATH_TO_INPUT_JSON = PATH_TO_FILE + Constants.INPUT_JSON;
     public static final String PATH_TO_OUTPUT_FILE = PATH_TO_FILE + Constants.OUTPUT_FILE_NAME;
 
     public static final String SEPARATOR = ";";

@@ -1,14 +1,26 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
+@JsonTypeInfo(use = JsonTypeInfo.Id.CLASS,
+        include = JsonTypeInfo.As.PROPERTY,
+        property = "@class")
+@JsonSubTypes({
+        @JsonSubTypes.Type(value = Candy.class),
+        @JsonSubTypes.Type(value = CandyWithFilling.class)
+})
 public class Candy {
 
     protected String name;
     protected String mainIngredient;
     protected int weight;
     protected double price;
+
+    public Candy() {
+    }
 
     public Candy(String name, String mainIngredient, int weight, double price) {
         this.name = name;
