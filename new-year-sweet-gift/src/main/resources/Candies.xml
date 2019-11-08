@@ -1,0 +1,40 @@
+<candies>
+    <candyWithFilling>
+        <name>Red Hat</name>
+        <mainIngredient>Choco</mainIngredient>
+        <weight>15</weight>
+        <price>8.55</price>
+        <fillings>
+            <filling>Waffer</filling>
+            <filling>Choco</filling>
+        </fillings>
+    </candyWithFilling>
+    <candy>
+        <name>Crazy Bee</name>
+        <mainIngredient>Jelly</mainIngredient>
+        <weight>10</weight>
+        <price>7.68</price>
+    </candy>
+    <candy>
+        <name>Crazy Bee</name>
+        <mainIngredient>Jelly</mainIngredient>
+        <weight>10</weight>
+        <price>7.68</price>
+    </candy>
+    <candyWithFilling>
+        <name>Alenka</name>
+        <mainIngredient>Choco</mainIngredient>
+        <weight>20</weight>
+        <price>10.20</price>
+        <fillings>
+            <filling>Waffer</filling>
+            <filling>Choco</filling>
+        </fillings>
+    </candyWithFilling>
+    <candy>
+        <name>Pepper Mint</name>
+        <mainIngredient>Caramel</mainIngredient>
+        <weight>8</weight>
+        <price>4.80</price>
+    </candy>
+</candies>
