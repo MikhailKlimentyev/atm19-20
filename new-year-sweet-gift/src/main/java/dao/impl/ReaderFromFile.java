@@ -1,6 +1,7 @@
 package dao.impl;
 
 import dao.api.IReadable;
+import exception.EmptyFillingException;
 import model.Candy;
 import model.CandyWithFilling;
 import model.Constants;
@@ -27,8 +28,12 @@ public class ReaderFromFile implements IReadable {
                     candies.add(new Candy(fields[0], fields[1], Integer.parseInt(fields[2]),
                             Double.parseDouble(fields[3])));
                 } else if (Constants.CANDY_WITH_FILLING_FIELDS_NUMBER == fields.length) {
-                    candies.add(new CandyWithFilling(fields[0], fields[1], Integer.parseInt(fields[2]),
-                            Double.parseDouble(fields[3]), Arrays.asList(fields[4])));
+                    try {
+                        candies.add(new CandyWithFilling(fields[0], fields[1], Integer.parseInt(fields[2]),
+                                Double.parseDouble(fields[3]), Arrays.asList(fields[4])));
+                    } catch (EmptyFillingException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
             return candies;
