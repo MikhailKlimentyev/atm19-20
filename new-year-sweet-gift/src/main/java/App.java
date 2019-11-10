@@ -1,9 +1,6 @@
 import dao.api.IReadable;
 import dao.api.IWritable;
-import dao.impl.ReaderFromFile;
-import dao.impl.ReaderFromJSON;
-import dao.impl.ReaderFromXmlDOM;
-import dao.impl.WriterToFile;
+import dao.impl.*;
 import model.Candy;
 import model.Constants;
 import model.Gift;
@@ -45,5 +42,9 @@ public class App {
 
         ReaderFromXmlDOM readerFromXmlDOM = new ReaderFromXmlDOM();
         System.out.println(readerFromXmlDOM.read());
+
+        ReaderFromDB readerFromDB = new ReaderFromDB();
+        System.out.println(readerFromDB.read());
     }
 }
+

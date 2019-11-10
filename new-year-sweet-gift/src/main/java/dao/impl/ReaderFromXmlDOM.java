@@ -58,11 +58,11 @@ public class ReaderFromXmlDOM implements IReadable {
     }
 
     private static Candy getCandyWithFilling(Element element) {
-        Candy candy = new CandyWithFilling();
-        candy.setName(getTagValue("name", element, 0));
-        candy.setMainIngredient(getTagValue("mainIngredient", element, 0));
-        candy.setWeight(Integer.parseInt(getTagValue("weight", element, 0)));
-        candy.setPrice(Double.parseDouble(getTagValue("price", element, 0)));
+        CandyWithFilling candyWithFilling = new CandyWithFilling();
+        candyWithFilling.setName(getTagValue("name", element, 0));
+        candyWithFilling.setMainIngredient(getTagValue("mainIngredient", element, 0));
+        candyWithFilling.setWeight(Integer.parseInt(getTagValue("weight", element, 0)));
+        candyWithFilling.setPrice(Double.parseDouble(getTagValue("price", element, 0)));
         NodeList fillings = element.getElementsByTagName("fillings");
         Element fillingsElement = (Element) fillings.item(0);
         NodeList fillingList = element.getElementsByTagName("filling");
@@ -70,8 +70,8 @@ public class ReaderFromXmlDOM implements IReadable {
         for (int i = 0; i < fillingList.getLength(); i++) {
             filling.add(getTagValue("filling", fillingsElement, i));
         }
-        ((CandyWithFilling) candy).setFilling(filling);
-        return candy;
+        candyWithFilling.setFilling(filling);
+        return candyWithFilling;
     }
 
     private static String getTagValue(String tag, Element element, int index) {
