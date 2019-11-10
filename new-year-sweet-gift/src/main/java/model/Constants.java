@@ -1,6 +1,8 @@
 package model;
 
 import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 public final class Constants {
 
@@ -62,9 +64,26 @@ public final class Constants {
     public static final String PATH_TO_OUTPUT_FILE = PATH_TO_FILE + Constants.OUTPUT_FILE_NAME;
     public static final String DATABASE_PROPERTIES_FILE = PATH_TO_FILE + Constants.DATABASE_PROPERTIES;
 
+    public static final String GIFT_CREATED_MESSAGE = "Gift have been got successfully";
+
     public static final String SEPARATOR = ";";
+
+    public static final Map<Integer, String> NUMBER_INGREDIENT_MAP = new HashMap<>();
 
     private Constants() {
         throw new AssertionError("This class should never be instantiated.");
+    }
+
+    static {
+        NUMBER_INGREDIENT_MAP.put(1, ALCOHOL);
+        NUMBER_INGREDIENT_MAP.put(2, CARAMEL);
+        NUMBER_INGREDIENT_MAP.put(3, CHOCO);
+        NUMBER_INGREDIENT_MAP.put(4, DARK_CHOCO);
+        NUMBER_INGREDIENT_MAP.put(5, JELLY);
+        NUMBER_INGREDIENT_MAP.put(6, MILK_CHOCO);
+        NUMBER_INGREDIENT_MAP.put(7, NOUGAT);
+        NUMBER_INGREDIENT_MAP.put(8, NUTS);
+        NUMBER_INGREDIENT_MAP.put(9, TOFFEY);
+        NUMBER_INGREDIENT_MAP.put(10, WAFFER);
     }
 }

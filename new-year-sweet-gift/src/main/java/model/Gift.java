@@ -10,6 +10,9 @@ public class Gift {
 
     private List<Candy> candies;
 
+    public Gift() {
+    }
+
     public Gift(List<Candy> candies) {
         this.candies = new ArrayList<>(candies);
     }

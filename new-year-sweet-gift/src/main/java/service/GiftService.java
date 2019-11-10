@@ -8,8 +8,8 @@ import java.util.*;
 
 public class GiftService {
 
-    public Gift getGift(Candy... candies) {
-        return new Gift(Arrays.asList(candies));
+    public Gift getGift(List<Candy> candies) {
+        return new Gift(candies);
     }
 
     public int getGiftWeight(Gift gift) {
